@@ -1,11 +1,10 @@
-"use client"
+'use client';
 
-import { headerLinks } from "@/constants"
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { headerLinks } from '@/constants';
 
-const NavItems = () => {
-
+function NavItems() {
   const pathName = usePathname();
 
   return (
@@ -24,7 +23,7 @@ const NavItems = () => {
         );
       })}
     </ul>
-  )
+  );
 }
 
-export default NavItems
+export default NavItems;

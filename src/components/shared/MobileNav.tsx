@@ -1,17 +1,12 @@
+import Image from 'next/image';
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
-import Image from "next/image";
-import { Separator } from "../ui/separator";
-import NavItems from "./NavItems";
+  Sheet, SheetContent, SheetTrigger,
+} from '@/components/ui/sheet';
+import { Separator } from '../ui/separator';
 
+import NavItems from './NavItems';
 
-const MobileNav = () => {
+function MobileNav() {
   return (
     <nav className="md:hidden">
       <Sheet>
@@ -35,7 +30,7 @@ const MobileNav = () => {
         </SheetContent>
       </Sheet>
     </nav>
-  )
+  );
 }
 
 export default MobileNav;

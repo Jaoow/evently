@@ -3,18 +3,34 @@
     "airbnb",
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint"
   ],
   "root": true,
+  "ignorePatterns": [
+    "**/components/ui/*.tsx"
+  ],
   "rules": {
-    "no-console": "warn",
-    "quotes": [
+    "import/extensions": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "linebreak-style": [
       "error",
-      "double"
+      "windows"
     ],
     "getter-return": [
       "error",

@@ -1,11 +1,11 @@
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "../ui/button"
-import NavItems from "./NavItems"
-import MobileNav from "./MobileNav"
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '../ui/button';
+import NavItems from './NavItems';
+import MobileNav from './MobileNav';
 
-const Header = () => {
+function Header() {
   return (
     <header className="w-full border-b">
       <div className="wrapper flex items-center justify-between">
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
