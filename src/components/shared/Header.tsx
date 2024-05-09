@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "../ui/button"
 import NavItems from "./NavItems"
+import MobileNav from "./MobileNav"
 
 const Header = () => {
   return (
@@ -12,6 +13,11 @@ const Header = () => {
           <Image src="/assets/images/logo.svg" alt="Evently" width={128} height={38} />
         </Link>
 
+        <SignedIn>
+          <nav className="md:flex-between hidden w-full max-w-xs">
+            <NavItems />
+          </nav>
+        </SignedIn>
 
         <div className="flex w-32 justify-end gap-3">
           <SignedOut>
@@ -22,6 +28,7 @@ const Header = () => {
 
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
+            <MobileNav />
           </SignedIn>
         </div>
       </div>
