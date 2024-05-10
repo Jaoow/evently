@@ -16,6 +16,12 @@
   ],
   "rules": {
     "import/extensions": "off",
+    "consistent-return": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "no-underscore-dangle": "off",
+    "no-console": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [
       1,
       {

@@ -1,6 +1,3 @@
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable consistent-return */
-
 'use server';
 
 import { revalidatePath } from 'next/cache';
